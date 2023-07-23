@@ -1,6 +1,6 @@
 import { Router } from "express";
-import upload from "../helper/upload";
-import { signup, login } from "../controller/auth";
+import upload from "../helper/upload.js";
+import { signup, login } from "../controller/auth.js";
 
 const router = Router();
 

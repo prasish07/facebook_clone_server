@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import User from "../models/user";
+import User from "../models/user.js";
 
 export const signup = async (req, res) => {
   try {
@@ -15,6 +15,8 @@ export const signup = async (req, res) => {
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
   } catch (error) {
+    console.log(error);
+    console.log("error");
     res.status(500).json({ error: error.message });
   }
 };
