@@ -24,7 +24,7 @@ To run the social media website locally on your machine, follow these instructio
    ```
    npm install
    ```
-###Running the Development Server
+### Running the Development Server
 Once you have completed the installation and configuration steps, you can start the development server:
 ```
 npm run dev
